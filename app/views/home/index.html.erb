@@ -1,0 +1,245 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+  <!-- Navigation -->
+  <nav class="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <span class="text-xl font-bold text-gray-900">AI Image Generator</span>
+        </div>
+        <%= link_to chat_index_path, 
+            class: "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105" do %>
+          Get Started
+        <% end %>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Transform Your Ideas Into
+          <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            Stunning Images
+          </span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
+          Experience the power of AI-driven image generation. Simply describe what you envision, 
+          and watch as our advanced chatbot brings your ideas to life with breathtaking visuals.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <%= link_to chat_index_path, 
+              class: "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg" do %>
+            Start Creating Now
+            <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          <% end %>
+          <a href="#features" class="text-gray-600 hover:text-gray-900 font-medium py-4 px-8 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          Why Choose Our AI Image Generator?
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Discover the features that make our platform the perfect choice for your creative needs
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Intelligent Chat Interface</h3>
+          <p class="text-gray-600">
+            Natural conversation flow with our AI chatbot. Simply describe your vision in plain English 
+            and get stunning results instantly.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">High-Quality Generation</h3>
+          <p class="text-gray-600">
+            Powered by state-of-the-art ClipDrop API technology, generating high-resolution images 
+            with incredible detail and artistic quality.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Easy Download & Share</h3>
+          <p class="text-gray-600">
+            One-click download functionality with beautiful hover effects. Save and share your 
+            generated images instantly with friends and colleagues.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Conversation Management</h3>
+          <p class="text-gray-600">
+            Organize your creative sessions with conversation history. Edit titles, delete old chats, 
+            and keep your workflow organized and efficient.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Responsive Design</h3>
+          <p class="text-gray-600">
+            Beautiful, responsive interface that works perfectly on desktop, tablet, and mobile devices. 
+            Create amazing images anywhere, anytime.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Lightning Fast</h3>
+          <p class="text-gray-600">
+            Optimized performance with instant image generation. No waiting, no delays - 
+            get your creative ideas visualized in seconds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          How It Works
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Three simple steps to bring your imagination to life
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+            1
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Describe Your Vision</h3>
+          <p class="text-gray-600">
+            Type a detailed description of the image you want to create. Be specific about style, 
+            colors, composition, and mood for the best results.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+            2
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">AI Generates Image</h3>
+          <p class="text-gray-600">
+            Our advanced AI processes your description and creates a stunning, high-quality image 
+            that matches your vision perfectly.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+            3
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Download & Share</h3>
+          <p class="text-gray-600">
+            Download your generated image with one click, share it with others, and continue 
+            creating more amazing visuals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Ready to Create Something Amazing?
+      </h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Join thousands of creators who are already using our AI image generator to bring their ideas to life.
+      </p>
+      <%= link_to chat_index_path, 
+          class: "bg-white text-blue-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg inline-flex items-center" do %>
+        Let's Go!
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      <% end %>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <div class="flex items-center justify-center space-x-2 mb-4">
+        <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <span class="text-xl font-bold">AI Image Generator</span>
+      </div>
+      <p class="text-gray-400 mb-4">
+        Powered by ClipDrop API technology
+      </p>
+      <p class="text-gray-500 text-sm mb-2">
+        © 2025 AI Image Generator. All rights reserved.
+      </p>
+      <p class="text-gray-500 text-sm">
+        Created by <span class="text-blue-400 font-medium">Sohail Abbas</span>
+      </p>
+    </div>
+  </footer>
+</div>
