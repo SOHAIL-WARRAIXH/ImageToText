@@ -4029,3 +4029,75 @@ Processing by ChatController#index as HTML
 Completed 200 OK in 256ms (Views: 149.3ms | ActiveRecord: 7.3ms (10 queries, 4 cached) | GC: 0.0ms)
 
 
+Started GET "/chat" for 39.63.255.215 at 2025-08-04 12:44:08 +0500
+Cannot render console from 39.63.255.215! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:42
+  [1m[36mConversation Load (0.4ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:45
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  Rendered chat/index.html.erb within layouts/application (Duration: 217.7ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 236.5ms | GC: 2.5ms)
+Completed 200 OK in 343ms (Views: 233.5ms | ActiveRecord: 17.3ms (10 queries, 4 cached) | GC: 3.6ms)
+
+
+Started GET "/assets/tailwind-45e26af8.css" for 39.63.255.215 at 2025-08-04 12:44:09 +0500
+Cannot render console from 39.63.255.215! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/chat" for 39.63.255.215 at 2025-08-04 12:44:09 +0500
+Cannot render console from 39.63.255.215! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:42
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:45
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  Rendered chat/index.html.erb within layouts/application (Duration: 131.3ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 135.5ms | GC: 0.4ms)
+Completed 200 OK in 205ms (Views: 138.9ms | ActiveRecord: 2.8ms (10 queries, 4 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 39.63.255.215 at 2025-08-04 12:44:15 +0500
+Cannot render console from 39.63.255.215! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | GC: 0.0ms)
+Completed 200 OK in 99ms (Views: 30.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+

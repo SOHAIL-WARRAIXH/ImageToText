@@ -58,19 +58,19 @@ class ChatController < ApplicationController
 
   def download_image
     image_path = params[:image_path]
-    
+
     # Security: Validate that the path is within the generated_images directory
     return redirect_back(fallback_location: chat_index_path, alert: "Invalid image path.") unless image_path&.start_with?("/generated_images/")
-    
+
     # Security: Extract only the filename from the path to prevent path traversal
     filename = File.basename(image_path)
-    
+
     # Security: Validate filename format (should be image_*.png)
     return redirect_back(fallback_location: chat_index_path, alert: "Invalid image path.") unless filename.match?(/\Aimage_\d+\.png\z/)
-    
+
     # Security: Construct the path safely using only the validated filename
     full_path = Rails.root.join("public", "generated_images", filename)
-    
+
     if File.exist?(full_path) && File.file?(full_path)
       send_file full_path, disposition: "attachment", filename: filename
     else
