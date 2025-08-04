@@ -17,6 +17,8 @@ Rails.application.configure do
 
   # Allow ngrok hosts
   config.hosts << "71518fdd5b3c.ngrok-free.app"
+  config.hosts << "215be8e5418d.ngrok-free.app"
+  config.hosts << "5924500bf892.ngrok-free.app"
   config.hosts << "*.ngrok-free.app"
 
   # Enable/disable Action Controller caching. By default Action Controller caching is disabled.

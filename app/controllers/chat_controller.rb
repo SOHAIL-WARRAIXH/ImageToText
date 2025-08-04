@@ -12,12 +12,12 @@ class ChatController < ApplicationController
     @conversation = Conversation.find(params[:conversation_id])
     user_message = @conversation.messages.create!(
       content: params[:content],
-      role: 'user'
+      role: "user"
     )
 
     # Generate image using ClipDrop API
     image_url = ClipdropService.generate_image(params[:content])
-    
+
     # Create assistant response
     assistant_content = if image_url
       "I've generated an image based on your prompt: '#{params[:content]}'. Here it is!"
@@ -27,12 +27,12 @@ class ChatController < ApplicationController
 
     @conversation.messages.create!(
       content: assistant_content,
-      role: 'assistant',
+      role: "assistant",
       image_url: image_url
     )
 
     @conversation.update!(updated_at: Time.current)
-    
+
     redirect_to chat_show_path(@conversation)
   end
 
@@ -53,17 +53,17 @@ class ChatController < ApplicationController
   def delete_conversation
     @conversation = Conversation.find(params[:id])
     @conversation.destroy
-    redirect_to chat_index_path, notice: 'Conversation deleted successfully.'
+    redirect_to chat_index_path, notice: "Conversation deleted successfully."
   end
 
   def download_image
     image_path = params[:image_path]
-    full_path = Rails.root.join('public', image_path.sub(/^\//, ''))
-    
+    full_path = Rails.root.join("public", image_path.sub(/^\//, ""))
+
     if File.exist?(full_path)
-      send_file full_path, disposition: 'attachment', filename: File.basename(image_path)
+      send_file full_path, disposition: "attachment", filename: File.basename(image_path)
     else
-      redirect_back(fallback_location: chat_index_path, alert: 'Image not found.')
+      redirect_back(fallback_location: chat_index_path, alert: "Image not found.")
     end
   end
 end

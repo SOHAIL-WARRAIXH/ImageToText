@@ -3675,3 +3675,247 @@ Sent file /home/sohail/texttoimage/public/generated_images/image_1754057143.png 
 Completed 200 OK in 22ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:21:06 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Texttoimage'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | GC: 0.0ms)
+Completed 200 OK in 78ms (Views: 25.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/tailwind-41094eab.css" for 127.0.0.1 at 2025-08-04 12:21:06 +0500
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-08-04 12:21:06 +0500
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-08-04 12:21:06 +0500
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-08-04 12:21:07 +0500
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:25:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | GC: 0.0ms)
+Completed 200 OK in 162ms (Views: 78.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-08-04 12:25:29 +0500
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 215be8e5418d.ngrok-free.app, 215be8e5418d.ngrok-free.app
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:26:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Texttoimage'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 184.7ms | GC: 0.0ms)
+Completed 200 OK in 447ms (Views: 229.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/tailwind-41094eab.css" for 127.0.0.1 at 2025-08-04 12:26:42 +0500
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 5924500bf892.ngrok-free.app, 5924500bf892.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 5924500bf892.ngrok-free.app, 5924500bf892.ngrok-free.app
+Started GET "/" for 124.29.215.213 at 2025-08-04 12:28:13 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Texttoimage'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | GC: 0.0ms)
+Completed 200 OK in 149ms (Views: 66.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/tailwind-41094eab.css" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-8b441ae0.css" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-3a2e143f.js" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 124.29.215.213 at 2025-08-04 12:28:14 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 124.29.215.213 at 2025-08-04 12:28:15 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 124.29.215.213 at 2025-08-04 12:28:15 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/chat" for 124.29.215.213 at 2025-08-04 12:28:19 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:42
+  [1m[36mConversation Load (2.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:45
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (3.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  Rendered chat/index.html.erb within layouts/application (Duration: 385.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 393.1ms | GC: 0.0ms)
+Completed 200 OK in 556ms (Views: 379.6ms | ActiveRecord: 44.7ms (10 queries, 4 cached) | GC: 0.0ms)
+
+
+Started GET "/chat" for 124.29.215.213 at 2025-08-04 12:28:21 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:42
+  [1m[36mConversation Load (1.0ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:45
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  Rendered chat/index.html.erb within layouts/application (Duration: 245.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 249.2ms | GC: 0.0ms)
+Completed 200 OK in 337ms (Views: 246.4ms | ActiveRecord: 5.8ms (10 queries, 4 cached) | GC: 0.0ms)
+
+
+Started GET "/chat/16" for 124.29.215.213 at 2025-08-04 12:28:27 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#show as HTML
+  Parameters: {"id" => "16"}
+  [1m[36mConversation Load (1.7ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" WHERE "conversations"."id" = 16 LIMIT 1 /*action='show',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/controllers/chat_controller.rb:7:in 'ChatController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering chat/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" ASC /*action='show',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/show.html.erb:29
+  Rendered chat/show.html.erb within layouts/application (Duration: 54.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | GC: 0.0ms)
+Completed 200 OK in 150ms (Views: 63.1ms | ActiveRecord: 2.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/download_image?image_path=%2Fgenerated_images%2Fimage_1754057143.png" for 124.29.215.213 at 2025-08-04 12:28:28 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#download_image as HTML
+  Parameters: {"image_path" => "/generated_images/image_1754057143.png"}
+Sent file /home/sohail/texttoimage/public/generated_images/image_1754057143.png (83.9ms)
+Completed 200 OK in 140ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 54.163.144.34 at 2025-08-04 12:28:50 +0500
+Cannot render console from 54.163.144.34! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | GC: 0.0ms)
+Completed 200 OK in 139ms (Views: 72.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/data:image/svg+xml,&amp;lt;svg%20xmlns=" for 54.159.193.111 at 2025-08-04 12:28:51 +0500
+Cannot render console from 54.159.193.111! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/data:image/svg+xml,&amp;lt;svg%20xmlns="):
+  
+Started GET "/favicon.ico" for 3.86.43.150 at 2025-08-04 12:28:53 +0500
+Cannot render console from 3.86.43.150! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 124.29.215.213 at 2025-08-04 12:29:02 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 53.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | GC: 0.0ms)
+Completed 200 OK in 145ms (Views: 63.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 124.29.215.213 at 2025-08-04 12:29:02 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/tailwind-41094eab.css" for 124.29.215.213 at 2025-08-04 12:29:02 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-3a2e143f.js" for 124.29.215.213 at 2025-08-04 12:29:02 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Started GET "/assets/controllers/index-ee64e1f1.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 124.29.215.213 at 2025-08-04 12:29:03 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/chat" for 124.29.215.213 at 2025-08-04 12:29:09 +0500
+Cannot render console from 124.29.215.213! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:42
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/views/chat/index.html.erb:45
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 15 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1 /*action='index',application='Texttoimage',controller='chat'*/[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."created_at" DESC LIMIT 1[0m
+  ↳ app/models/conversation.rb:7:in 'Conversation#last_message'
+  Rendered chat/index.html.erb within layouts/application (Duration: 126.4ms | GC: 1.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 130.2ms | GC: 1.9ms)
+Completed 200 OK in 184ms (Views: 131.8ms | ActiveRecord: 3.5ms (10 queries, 4 cached) | GC: 1.9ms)
+
+

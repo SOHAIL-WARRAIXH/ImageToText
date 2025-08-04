@@ -7,12 +7,16 @@ class ChatControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get show" do
-    get chat_show_url
+    # Create a conversation first
+    conversation = Conversation.create!(title: "Test Conversation")
+    get chat_show_url(conversation)
     assert_response :success
   end
 
-  test "should get create_message" do
-    get chat_create_message_url
-    assert_response :success
+  test "should post create_message" do
+    # Create a conversation first
+    conversation = Conversation.create!(title: "Test Conversation")
+    post create_message_url(conversation), params: { content: "Test message" }
+    assert_response :redirect
   end
 end

@@ -1,0 +1,126 @@
+  [1m[35mSQL (0.6ms)[0m  [1m[35mSET search_path TO public[0m
+  [1m[35m (323.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "texttoimage_test"[0m
+  [1m[35m (357.1ms)[0m  [1m[35mCREATE DATABASE "texttoimage_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (173.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "conversations" CASCADE[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCREATE TABLE "conversations" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (24.9ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "conversation_id" bigint NOT NULL, "content" text, "role" character varying, "image_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE INDEX "index_messages_on_conversation_id" ON "messages" ("conversation_id")[0m
+  [1m[35m (10.4ms)[0m  [1m[35mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_7f927086d2"
+FOREIGN KEY ("conversation_id")
+  REFERENCES "conversations" ("id")
+[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (37.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (13.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250801120312)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250801120301);[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2025-08-04 07:33:52.658484', '2025-08-04 07:33:52.658494') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'ea353f26b596c3345e5ef3ac06beea1c7bc4b596', '2025-08-04 07:33:52.795868', '2025-08-04 07:33:52.795891') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (31.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mALTER TABLE "conversations" DISABLE TRIGGER ALL;ALTER TABLE "messages" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[36mFixtures Load (6.7ms)[0m  [1m[31mDELETE FROM "conversations";
+DELETE FROM "messages";
+INSERT INTO "conversations" ("id", "title", "created_at", "updated_at") VALUES (980190962, 'MyString', '2025-08-04 07:33:54.467311', '2025-08-04 07:33:54.467311'), (298486374, 'MyString', '2025-08-04 07:33:54.467311', '2025-08-04 07:33:54.467311');
+INSERT INTO "messages" ("id", "conversation_id", "content", "role", "image_url", "created_at", "updated_at") VALUES (980190962, 980190962, 'MyText', 'MyString', 'MyString', '2025-08-04 07:33:54.746629', '2025-08-04 07:33:54.746629'), (298486374, 298486374, 'MyText', 'MyString', 'MyString', '2025-08-04 07:33:54.746629', '2025-08-04 07:33:54.746629')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "conversations" ENABLE TRIGGER ALL;ALTER TABLE "messages" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.9ms)[0m  [1m[35mdo $$
+  declare r record;
+BEGIN
+FOR r IN (
+  SELECT FORMAT(
+    'UPDATE pg_catalog.pg_constraint SET convalidated=false WHERE conname = ''%1$I'' AND connamespace::regnamespace = ''%2$I''::regnamespace; ALTER TABLE %2$I.%3$I VALIDATE CONSTRAINT %1$I;',
+    constraint_name,
+    table_schema,
+    table_name
+  ) AS constraint_check
+  FROM information_schema.table_constraints WHERE constraint_type = 'FOREIGN KEY'
+)
+  LOOP
+    EXECUTE (r.constraint_check);
+  END LOOP;
+END;
+$$;
+[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ChatControllerTest: test_should_post_create_message
+---------------------------------------------------
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConversation Create (4.8ms)[0m  [1m[32mINSERT INTO "conversations" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Test Conversation"], ["created_at", "2025-08-04 07:33:55.651378"], ["updated_at", "2025-08-04 07:33:55.651378"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/chat/980190963/messages" for 127.0.0.1 at 2025-08-04 12:33:56 +0500
+Processing by ChatController#create_message as HTML
+  Parameters: {"content" => "Test message", "conversation_id" => "980190963"}
+  [1m[36mConversation Load (4.8ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT $2[0m  [["id", 980190963], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (4.5ms)[0m  [1m[32mINSERT INTO "messages" ("conversation_id", "content", "role", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["conversation_id", 980190963], ["content", "Test message"], ["role", "user"], ["image_url", nil], ["created_at", "2025-08-04 07:33:56.950375"], ["updated_at", "2025-08-04 07:33:56.950375"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (4.7ms)[0m  [1m[32mINSERT INTO "messages" ("conversation_id", "content", "role", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["conversation_id", 980190963], ["content", "I've generated an image based on your prompt: 'Test message'. Here it is!"], ["role", "assistant"], ["image_url", "/generated_images/image_1754292840.png"], ["created_at", "2025-08-04 07:34:00.814184"], ["updated_at", "2025-08-04 07:34:00.814184"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConversation Update (2.8ms)[0m  [1m[33mUPDATE "conversations" SET "updated_at" = $1 WHERE "conversations"."id" = $2[0m  [["updated_at", "2025-08-04 07:34:00.836624"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/chat/980190963
+Completed 302 Found in 4465ms (ActiveRecord: 23.7ms (4 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+ChatControllerTest: test_should_get_show
+----------------------------------------
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConversation Create (3.0ms)[0m  [1m[32mINSERT INTO "conversations" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Test Conversation"], ["created_at", "2025-08-04 07:34:01.304533"], ["updated_at", "2025-08-04 07:34:01.304533"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/chat/980190964" for 127.0.0.1 at 2025-08-04 12:34:01 +0500
+Processing by ChatController#show as HTML
+  Parameters: {"id" => "980190964"}
+  [1m[36mConversation Load (1.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT $2[0m  [["id", 980190964], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chat/show.html.erb within layouts/application
+  [1m[36mMessage Load (3.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1 ORDER BY "messages"."created_at" ASC[0m  [["conversation_id", 980190964]]
+  Rendered chat/show.html.erb within layouts/application (Duration: 31.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 104.4ms | GC: 0.0ms)
+Completed 200 OK in 186ms (Views: 135.6ms | ActiveRecord: 4.2ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+ChatControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/chat" for 127.0.0.1 at 2025-08-04 12:34:01 +0500
+Processing by ChatController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chat/index.html.erb within layouts/application
+  [1m[36mConversation Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "conversations" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mConversation Load (1.0ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations" ORDER BY "conversations"."updated_at" DESC[0m
+  [1m[36mMessage Load (4.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1 ORDER BY "messages"."created_at" DESC LIMIT $2[0m  [["conversation_id", 980190962], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (2.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1 ORDER BY "messages"."created_at" DESC LIMIT $2[0m  [["conversation_id", 980190962], ["LIMIT", 1]]
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1 ORDER BY "messages"."created_at" DESC LIMIT $2[0m  [["conversation_id", 298486374], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1 ORDER BY "messages"."created_at" DESC LIMIT $2[0m  [["conversation_id", 298486374], ["LIMIT", 1]]
+  Rendered chat/index.html.erb within layouts/application (Duration: 218.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 258.1ms | GC: 0.0ms)
+Completed 200 OK in 265ms (Views: 250.9ms | ActiveRecord: 9.0ms (6 queries, 2 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:34:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
